@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vending machine front-end</title>
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="./build/contracts/VendingMachine.json"
+    ></script>
+  </head>
+  <body>
+    <script>
+      var vendingMachine;
+
+      function startApp() {
+        var vendingMachineAddress =
+          "0x9F17C07883F012a6FDe48B5BE487cD015bc6FD86";
+        vendingMachine = new web3js.eth.Contract(abi, vendingMachineAddress);
+      }
+
+      function getVendingMachineBalance() {
+        return vendingMachine.methods.getBalance().call();
+      }
+
+      // 1. Define `zombieToOwner` here
+
+      // 2. Define `getZombiesByOwner` here
+
+      window.addEventListener("load", function () {
+        // Checking if Web3 has been injected by the browser (Mist/MetaMask)
+        if (typeof web3 !== "undefined") {
+          // Use Mist/MetaMask's provider
+          web3js = new Web3(web3.currentProvider);
+        } else {
+          // Handle the case where the user doesn't have MetaMask installed
+          // Probably show them a message prompting them to install MetaMask
+        }
+
+        // Now you can start your app & access web3 freely:
+        startApp();
+      });
+    </script>
+  </body>
+</html>

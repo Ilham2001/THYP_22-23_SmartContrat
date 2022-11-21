@@ -14,6 +14,11 @@ module.exports = {
       network_id: "*",
       port: 7545,
       host: "127.0.0.1"
+    },
+    loc_myserver_myserver: {
+      network_id: "*",
+      port: 8545,
+      host: "127.0.0.1"
     }
   },
   mocha: {},
