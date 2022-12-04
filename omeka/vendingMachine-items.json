@@ -1,0 +1,185 @@
+[
+  {
+    "@context": "http://localhost/omeka-s/api-context",
+    "@id": "http://localhost/omeka-s/api/items/2",
+    "@type": ["o:Item", "jdc:VendingMachine"],
+    "o:id": 2,
+    "o:is_public": true,
+    "o:owner": {
+      "@id": "http://localhost/omeka-s/api/users/1",
+      "o:id": 1
+    },
+    "o:resource_class": {
+      "@id": "http://localhost/omeka-s/api/resource_classes/107",
+      "o:id": 107
+    },
+    "o:resource_template": {
+      "@id": "http://localhost/omeka-s/api/resource_templates/3",
+      "o:id": 3
+    },
+    "o:thumbnail": null,
+    "o:title": "Vending Machine",
+    "thumbnail_display_urls": {
+      "large": null,
+      "medium": null,
+      "square": null
+    },
+    "o:created": {
+      "@value": "2022-12-04T18:18:20+00:00",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "o:modified": {
+      "@value": "2022-12-04T18:28:28+00:00",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "o:media": [],
+    "o:item_set": [],
+    "o:site": [],
+    "dcterms:title": [
+      {
+        "type": "literal",
+        "property_id": 1,
+        "property_label": "Title",
+        "is_public": true,
+        "@value": "Vending Machine"
+      }
+    ],
+    "jdc:Balance": [
+      {
+        "type": "literal",
+        "property_id": 185,
+        "property_label": "balance",
+        "is_public": true,
+        "@value": "100"
+      }
+    ],
+    "jdc:RestockAmount": [
+      {
+        "type": "literal",
+        "property_id": 186,
+        "property_label": "restockAmount",
+        "is_public": true,
+        "@value": "10"
+      }
+    ]
+  },
+  {
+    "@context": "http://localhost/omeka-s/api-context",
+    "@id": "http://localhost/omeka-s/api/items/3",
+    "@type": ["o:Item", "jdc:Product"],
+    "o:id": 3,
+    "o:is_public": true,
+    "o:owner": {
+      "@id": "http://localhost/omeka-s/api/users/1",
+      "o:id": 1
+    },
+    "o:resource_class": {
+      "@id": "http://localhost/omeka-s/api/resource_classes/109",
+      "o:id": 109
+    },
+    "o:resource_template": {
+      "@id": "http://localhost/omeka-s/api/resource_templates/3",
+      "o:id": 3
+    },
+    "o:thumbnail": null,
+    "o:title": "Coffee",
+    "thumbnail_display_urls": {
+      "large": null,
+      "medium": null,
+      "square": null
+    },
+    "o:created": {
+      "@value": "2022-12-04T18:27:29+00:00",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "o:modified": {
+      "@value": "2022-12-04T18:28:56+00:00",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "o:media": [],
+    "o:item_set": [],
+    "o:site": [],
+    "dcterms:title": [
+      {
+        "type": "literal",
+        "property_id": 1,
+        "property_label": "Title",
+        "is_public": true,
+        "@value": "Coffee"
+      }
+    ],
+    "jdc:Price": [
+      {
+        "type": "literal",
+        "property_id": 188,
+        "property_label": "price",
+        "is_public": true,
+        "@value": "2 ether"
+      }
+    ],
+    "jdc:Quantity": [
+      {
+        "type": "literal",
+        "property_id": 189,
+        "property_label": "quantity",
+        "is_public": true,
+        "@value": "10"
+      }
+    ],
+    "jdc:PurchaseAmount": [
+      {
+        "type": "literal",
+        "property_id": 187,
+        "property_label": "purchaseAmount",
+        "is_public": true,
+        "@value": "2"
+      }
+    ]
+  },
+  {
+    "@context": "http://localhost/omeka-s/api-context",
+    "@id": "http://localhost/omeka-s/api/items/4",
+    "@type": ["o:Item", "jdc:Client"],
+    "o:id": 4,
+    "o:is_public": true,
+    "o:owner": {
+      "@id": "http://localhost/omeka-s/api/users/1",
+      "o:id": 1
+    },
+    "o:resource_class": {
+      "@id": "http://localhost/omeka-s/api/resource_classes/108",
+      "o:id": 108
+    },
+    "o:resource_template": {
+      "@id": "http://localhost/omeka-s/api/resource_templates/3",
+      "o:id": 3
+    },
+    "o:thumbnail": null,
+    "o:title": "Client",
+    "thumbnail_display_urls": {
+      "large": null,
+      "medium": null,
+      "square": null
+    },
+    "o:created": {
+      "@value": "2022-12-04T18:29:28+00:00",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "o:modified": {
+      "@value": "2022-12-04T18:29:28+00:00",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "o:media": [],
+    "o:item_set": [],
+    "o:site": [],
+    "dcterms:title": [
+      {
+        "type": "literal",
+        "property_id": 1,
+        "property_label": "Title",
+        "is_public": true,
+        "@value": "Client"
+      }
+    ]
+  }
+]

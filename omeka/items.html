@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Items list</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+  </head>
+  <body>
+    <div id="main"></div>
+  </body>
+  <script>
+    d3.json("data/vendingMachine-items.json").then(function (data) {
+      console.log(data);
+      d3.select("#main")
+        .selectAll("div")
+        .data(data)
+        .enter()
+        .append("div")
+        .attr("id", (d, i) => "id-" + i)
+        .html(
+          (d, i) => "Element : " + i + " " + d["dcterms:title"][0]["@value"]
+        );
+    });
+  </script>
+</html>

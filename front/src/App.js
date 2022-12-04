@@ -77,13 +77,13 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Coffee Vending Machine</h1>
-        <h3>There is (..) left</h3>
+        <h3>There is {this.getBalance} left</h3>
         <Form>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>How much do you want ?</Form.Label>
             <Form.Control type="number" />
           </Form.Group>
-          <Button variant="primary" type="submit" /*onClick={(event) => this.purchase()}*/>
+          <Button variant="primary" type="submit" onClick={(event) => this.purchase()}>
             Submit
           </Button>
         </Form>
